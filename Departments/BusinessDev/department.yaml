@@ -1,0 +1,115 @@
+department_name: "BusinessDev"
+description: "Comprehensive business development operations covering strategic partnerships, project management, and presales engineering"
+department_manager: "Departments.BusinessDev.business_dev_department.BusinessDevDepartment"
+
+# Routing keywords for BusinessDev department
+routing_keywords:
+  # Business Development core terms
+  - "partnership"
+  - "partnerships"
+  - "business development"
+  - "bd"
+  - "strategic alliance"
+  - "collaboration"
+  - "joint venture"
+  - "channel partner"
+  - "reseller"
+  - "integration"
+  
+  # Project Management terms
+  - "project"
+  - "project management"
+  - "ipm"
+  - "milestone"
+  - "timeline"
+  - "deliverable"
+  - "scope"
+  - "resource allocation"
+  - "project plan"
+  - "stakeholder"
+  - "coordination"
+  
+  # Presales Engineering terms  
+  - "presales"
+  - "pre-sales"
+  - "solution"
+  - "technical demo"
+  - "proof of concept"
+  - "poc"
+  - "architecture"
+  - "technical proposal"
+  - "requirements"
+  - "solution design"
+  - "technical evaluation"
+  - "demo"
+
+# Direct agent structure (no sub-departments)
+agents:
+  - "Departments.BusinessDev.Agents.ipm_agent.IPMAgent"
+  - "Departments.BusinessDev.Agents.bdm_agent.BDMAgent"
+  - "Departments.BusinessDev.Agents.presales_engineer_agent.PresalesEngineerAgent"
+
+# Agent specializations
+agent_specializations:
+  IPM:
+    focus: "International Partnerships Management and global expansion"
+    expertise:
+      - "Strategic partnership identification and development"
+      - "Cross-border business relationship management"
+      - "International market entry strategy"
+      - "Cultural sensitivity and localization"
+      - "Partnership agreement negotiation"
+      - "Global compliance and regulatory navigation"
+    
+  BDM:
+    focus: "Business Development and Partnership Management"
+    expertise:
+      - "Strategic partnership identification"
+      - "Partnership negotiation and structuring"
+      - "Channel partner management"
+      - "Business development strategy"
+      - "Market expansion planning"
+    
+  PresalesEngineer:
+    focus: "Technical Presales and Solution Engineering"
+    expertise:
+      - "Solution architecture and design"
+      - "Technical demonstrations and POCs"
+      - "Requirements gathering and analysis"
+      - "Technical proposal development"
+      - "Customer technical consultation"
+    
+
+# Department metrics
+key_metrics:
+  - "Active Project Count"
+  - "Project Success Rate"
+  - "Partnership Conversion Rate"
+  - "Revenue from Partnerships"
+  - "Presales Engagement Success Rate"
+  - "Technical POC Conversion Rate"
+  - "Board Meeting Effectiveness Score"
+  - "Strategic Initiative Completion Rate"
+  - "Partner Satisfaction Score"
+  - "Solution Win Rate"
+
+# Integration points with other departments
+department_integrations:
+  Sales:
+    - "Lead qualification and handoff"
+    - "Technical proposal support"
+    - "Partnership sales coordination"
+  
+  Marketing:
+    - "Partner marketing collaboration"
+    - "Solution positioning and messaging"
+    - "Technical content development"
+  
+  Executive:
+    - "Strategic initiative reporting"
+    - "Board governance coordination"
+    - "Partnership strategy alignment"
+
+priority: "high"
+created_by: "system"
+version: "1.0" 

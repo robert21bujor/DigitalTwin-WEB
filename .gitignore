@@ -1,0 +1,132 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Google Drive Credentials
+Memory/Config/credentials.json
+
+# Authentication tokens
+Authentication/token.json
+Memory/Config/token.json
+
+# Centralized Cache Directory
+.cache/
+
+# Application Logs
+*.log
+Logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables
+.env
+
+# Google Calendar API credentials
+credentials.json
+token.json
+client_secrets.json
+**/client_secrets.json
+
+# Node.js dependencies (specific paths to avoid ignoring parent directories)
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# Next.js build output
+.next/
+out/
+
+# TypeScript build info
+*.tsbuildinfo 
+
+# Development/Testing files
+test_*.py
+debug_*.py
+temp_*.py
+cleanup_*.py
+
+# ClickUp sensitive data
+clickup_tokens.json
+**/clickup_tokens.json
+
+# Backup files
+*.backup
+tasks_storage.backup
+
+# Task storage and user data
+tasks_storage.json
+**/tasks_storage.json
+
+# Email filtering data
+review_queue.json
+whitelist.json
+audit_log.jsonl
+**/email_filtering/*.json
+**/email_filtering/*.jsonl
+
+# Server logs
+server.log

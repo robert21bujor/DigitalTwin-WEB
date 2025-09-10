@@ -1,0 +1,31 @@
+display_name: "Executive Agents"
+description: "Executive leadership agents with strategic oversight and cross-department coordination"
+manager_name: "ExecutiveManager"
+memory_collection: "global-shared-memory"
+
+skills:
+  - "Strategic Planning"
+  - "Executive Leadership"
+  - "Cross-Department Coordination"
+  - "Financial Analysis"
+  - "Performance Management"
+  - "Decision Making"
+
+routing_keywords:
+  - "executive"
+  - "strategic"
+  - "strategy"
+  - "cmo"
+  - "leadership"
+  - "decision"
+  - "oversight"
+  - "coordination"
+  - "planning"
+  - "executive decision"
+  - "strategic planning"
+
+agents:
+  - name: "ExecutiveAgent"
+    class: "ExecutiveAgent"
+    file: "agents/chief_marketing_officer.py"
+    specialization: "strategic_leadership" 

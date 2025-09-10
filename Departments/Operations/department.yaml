@@ -1,0 +1,199 @@
+department_name: "Operations"
+description: "Comprehensive operations management covering client success, legal compliance, custom reporting, and delivery support services"
+department_manager: "Departments.Operations.operations_department.OperationsDepartment"
+
+# Routing keywords for Operations department
+routing_keywords:
+  # Legal terms
+  - "legal"
+  - "contract"
+  - "compliance"
+  - "agreement"
+  - "terms"
+  - "liability"
+  - "intellectual property"
+  - "privacy"
+  - "gdpr"
+  - "regulatory"
+  
+  # Client Success terms
+  - "client success"
+  - "customer success"
+  - "csm"
+  - "delivery"
+  - "implementation"
+  - "onboarding"
+  - "adoption"
+  - "renewal"
+  - "expansion"
+  - "health score"
+  - "client satisfaction"
+  
+  # Delivery Consulting terms
+  - "delivery consultant"
+  - "project delivery"
+  - "milestone"
+  - "implementation"
+  - "go-live"
+  - "deployment"
+  - "configuration"
+  - "training"
+  - "support"
+  
+  # Reporting terms
+  - "reporting"
+  - "dashboard"
+  - "analytics"
+  - "kpi"
+  - "metrics"
+  - "business intelligence"
+  - "data visualization"
+  - "custom report"
+  - "performance"
+  
+  # Support terms
+  - "support"
+  - "ticket"
+  - "issue"
+  - "bug"
+  - "troubleshooting"
+  - "maintenance"
+  - "escalation"
+
+# Sub-department structure
+subdepartments:
+  Legal:
+    manager: "Departments.Operations.Legal.manager.LegalManager"
+    agents:
+      - "Departments.Operations.Legal.Agents.legal_agent.LegalAgent"
+  
+  ClientSuccess:
+    manager: "Departments.Operations.ClientSuccess.manager.ClientSuccessManager"
+    agents:
+      - "Departments.Operations.ClientSuccess.Agents.head_of_operations_agent.HeadOfOperationsAgent"
+      - "Departments.Operations.ClientSuccess.Agents.senior_csm_agent.SeniorCSMAgent"
+      - "Departments.Operations.ClientSuccess.Agents.senior_delivery_consultant_agent.SeniorDeliveryConsultantAgent"
+      - "Departments.Operations.ClientSuccess.Agents.delivery_consultant_bg_agent.DeliveryConsultantBGAgent"
+      - "Departments.Operations.ClientSuccess.Agents.delivery_consultant_hu_agent.DeliveryConsultantHUAgent"
+      - "Departments.Operations.ClientSuccess.Agents.delivery_consultant_en_agent.DeliveryConsultantENAgent"
+  
+  CustomReporting:
+    manager: "Departments.Operations.CustomReporting.manager.CustomReportingManager"
+    agents:
+      - "Departments.Operations.CustomReporting.Agents.reporting_manager_agent.ReportingManagerAgent"
+      - "Departments.Operations.CustomReporting.Agents.reporting_specialist_agent.ReportingSpecialistAgent"
+  
+  DCSupport:
+    manager: "Departments.Operations.DCSupport.manager.DCSupportManager"
+    agents:
+      - "Departments.Operations.DCSupport.Agents.dc_support_agent.DCSupportAgent"
+      - "Departments.Operations.DCSupport.Agents.support_intern_agent.SupportInternAgent"
+
+# Agent specializations
+agent_specializations:
+  HeadOfOperations:
+    focus: "Overall operations management and strategic oversight"
+    expertise:
+      - "Operations strategy and planning"
+      - "Cross-functional team leadership"
+      - "Process optimization and efficiency"
+      - "Quality assurance and compliance"
+      - "Stakeholder management"
+    
+  SeniorCSM:
+    focus: "Senior customer success management and client relationships"
+    expertise:
+      - "Enterprise client management"
+      - "Strategic account planning"
+      - "Customer lifecycle optimization"
+      - "Escalation handling and resolution"
+      - "Team mentorship and guidance"
+    
+  SeniorDeliveryConsultant:
+    focus: "Senior delivery consulting and project leadership"
+    expertise:
+      - "Complex project delivery management"
+      - "Client implementation strategy"
+      - "Technical solution architecture"
+      - "Team coordination and leadership"
+      - "Risk management and mitigation"
+    
+  DeliveryConsultant:
+    focus: "Delivery consulting and project implementation"
+    expertise:
+      - "Project implementation and delivery"
+      - "Client training and adoption"
+      - "Technical configuration and setup"
+      - "Language-specific client support"
+      - "Documentation and knowledge transfer"
+    
+  ReportingManager:
+    focus: "Reporting strategy and business intelligence management"
+    expertise:
+      - "BI strategy and roadmap development"
+      - "Custom reporting solution design"
+      - "Data analysis and insights generation"
+      - "Stakeholder reporting and communication"
+      - "Reporting team management"
+    
+  ReportingSpecialist:
+    focus: "Technical reporting development and data analysis"
+    expertise:
+      - "Dashboard and report development"
+      - "Data visualization and storytelling"
+      - "SQL and data query optimization"
+      - "Automated reporting solutions"
+      - "Data quality and validation"
+    
+  Legal:
+    focus: "Legal compliance and contract management"
+    expertise:
+      - "Contract drafting and review"
+      - "Regulatory compliance monitoring"
+      - "Risk assessment and mitigation"
+      - "Intellectual property protection"
+      - "Dispute resolution and negotiation"
+    
+  DCSupport:
+    focus: "Delivery consulting support and assistance"
+    expertise:
+      - "Technical support and troubleshooting"
+      - "Client communication and coordination"
+      - "Documentation and process support"
+      - "Quality assurance and testing"
+      - "Knowledge base management"
+
+# Department metrics
+key_metrics:
+  - "Client Satisfaction Score (CSAT)"
+  - "Net Promoter Score (NPS)"
+  - "Customer Health Score"
+  - "Implementation Success Rate"
+  - "Time to Value (TTV)"
+  - "Support Ticket Resolution Time"
+  - "Contract Compliance Rate"
+  - "Report Delivery Accuracy"
+  - "Client Retention Rate"
+  - "Escalation Resolution Rate"
+
+# Integration points with other departments
+department_integrations:
+  Marketing:
+    - "Case study development"
+    - "Client testimonials and references"
+    - "Market feedback and insights"
+  
+  BusinessDev:
+    - "Partnership implementation support"
+    - "Strategic client relationship management"
+    - "Market expansion feedback"
+
+# Language support capabilities
+language_support:
+  - "English (EN)"
+  - "Bulgarian (BG)"
+  - "Hungarian (HU)"
+
+priority: "high"
+created_by: "system"
+version: "1.0" 

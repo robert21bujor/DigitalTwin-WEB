@@ -1,0 +1,64 @@
+display_name: "Executive Leadership"
+description: "Executive leadership with comprehensive capabilities including strategic planning, task execution, and final approval authority"
+manager_name: "ExecutiveManager"
+memory_collection: "global-shared-memory"
+
+skills:
+  - "Strategic Planning"
+  - "Executive Leadership"
+  - "Cross-Department Coordination"
+  - "Financial Analysis"
+  - "Performance Management"
+  - "Decision Making"
+  - "Task Review & Approval"
+  - "Executive Oversight"
+
+routing_keywords:
+  - "executive"
+  - "strategic"
+  - "strategy"
+  - "cmo"
+  - "leadership"
+  - "decision"
+  - "oversight"
+  - "coordination"
+  - "planning"
+  - "executive decision"
+  - "strategic planning"
+  - "final review"
+  - "approval"
+  - "reject"
+
+agents:
+  - name: "ExecutiveAgent"
+    class: "ExecutiveAgent"
+    file: "agents/chief_marketing_officer.py"
+    specialization: "comprehensive_executive_leadership"
+    capabilities:
+      - "Task Execution"
+      - "Strategic Analysis" 
+      - "Final Review & Approval"
+      - "Performance Tracking"
+      - "Cross-Division Access" 
+
+departments:
+  Marketing:
+    config_file: "Departments/Marketing/department.yaml"
+    department_class: "Departments.Marketing.marketing_department.MarketingDepartment"
+    priority: "high"
+    status: "active"
+  
+# Executive oversight for all departments
+executives:
+  - "Departments.Executive.agents.chief_marketing_officer.ChiefMarketingOfficer"
+
+# Cross-department coordination
+coordination:
+  marketing_to_businessdev: "Strategic partnership opportunities and market insights"
+  businessdev_to_marketing: "Partner feedback and international market intelligence"
+
+# Global settings
+default_priority: "medium"
+auto_routing: true
+created_by: "system"
+version: "2.0" 

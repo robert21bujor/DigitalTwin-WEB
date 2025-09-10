@@ -1,0 +1,137 @@
+# Department Configuration Template
+# Copy this file to: Departments/YourDepartmentName/department.yaml
+# Modify the values below for your specific department
+
+# Basic Information
+display_name: "Your Department Name"  # Human-readable name
+description: "Brief description of what this department does"
+manager_name: "YourDepartmentManager"  # Will be auto-generated
+memory_collection: "your-department-memory"  # Memory collection name
+
+# Department Skills/Capabilities
+skills:
+  - "Skill 1"
+  - "Skill 2"
+  - "Skill 3"
+  - "Add more skills as needed"
+
+# Keywords for routing tasks to this department
+routing_keywords:
+  - "keyword1"
+  - "keyword2"
+  - "department-name"
+  - "related-terms"
+  - "add-more-keywords"
+
+# Agents in this department
+agents:
+  # Example agent configuration
+  - name: "ExampleAgent"                    # Agent name
+    class: "ExampleAgent"                   # Python class name
+    file: "agents/example_agent.py"         # File path relative to department
+    specialization: "example_specialization"  # What this agent specializes in
+    
+  # Add more agents as needed
+  # - name: "AnotherAgent"
+  #   class: "AnotherAgent"
+  #   file: "agents/another_agent.py"
+  #   specialization: "another_specialization"
+
+# Optional: Department-specific configuration
+config:
+  # Add any department-specific settings here
+  approval_required: true
+  escalation_threshold: "high"
+  reporting_frequency: "weekly"
+  
+  # Integration settings
+  integrations:
+    external_apis: []
+    database_connections: []
+    notification_channels: []
+
+# Optional: Workflow definitions
+workflows:
+  standard_process:
+    steps: ["intake", "analysis", "action", "review"]
+    approval_required: true
+    
+  urgent_process:
+    steps: ["immediate_action", "notify_manager"]
+    approval_required: false
+
+# Optional: Performance metrics to track
+metrics:
+  - "task_completion_rate"
+  - "response_time"
+  - "quality_score"
+  - "customer_satisfaction"
+
+# EXAMPLES OF DIFFERENT DEPARTMENT TYPES:
+
+# SALES DEPARTMENT EXAMPLE:
+# display_name: "Sales"
+# description: "Sales department with lead generation and conversion"
+# skills:
+#   - "Lead Generation"
+#   - "Sales Conversion"
+#   - "Customer Relationship Management"
+#   - "Pipeline Management"
+# routing_keywords:
+#   - "sales"
+#   - "leads"
+#   - "conversion"
+#   - "pipeline"
+#   - "prospects"
+#   - "deals"
+# agents:
+#   - name: "LeadAgent"
+#     class: "LeadAgent"
+#     file: "agents/lead_agent.py"
+#     specialization: "lead_generation"
+#   - name: "ConversionAgent"
+#     class: "ConversionAgent"
+#     file: "agents/conversion_agent.py"
+#     specialization: "sales_conversion"
+
+# HR DEPARTMENT EXAMPLE:
+# display_name: "Human Resources"
+# description: "HR department with recruitment, onboarding, and employee management"
+# skills:
+#   - "Recruitment"
+#   - "Onboarding"
+#   - "Employee Relations"
+#   - "Performance Management"
+# routing_keywords:
+#   - "hr"
+#   - "hiring"
+#   - "recruitment"
+#   - "onboarding"
+#   - "employee"
+#   - "performance"
+# agents:
+#   - name: "RecruitmentAgent"
+#     class: "RecruitmentAgent"
+#     file: "agents/recruitment_agent.py"
+#     specialization: "talent_acquisition"
+
+# FINANCE DEPARTMENT EXAMPLE:
+# display_name: "Finance"
+# description: "Finance department with budgeting, accounting, and financial analysis"
+# skills:
+#   - "Financial Analysis"
+#   - "Budgeting"
+#   - "Accounting"
+#   - "Financial Reporting"
+# routing_keywords:
+#   - "finance"
+#   - "budget"
+#   - "accounting"
+#   - "financial"
+#   - "revenue"
+#   - "expenses"
+# agents:
+#   - name: "AnalystAgent"
+#     class: "AnalystAgent"
+#     file: "agents/analyst_agent.py"
+#     specialization: "financial_analysis" 

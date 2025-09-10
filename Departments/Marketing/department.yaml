@@ -1,0 +1,153 @@
+display_name: "Marketing"
+description: "Complete marketing department with digital, content, and product marketing capabilities"
+manager_name: "MarketingManager"
+memory_collection: "marketing-memory"
+
+skills:
+  - "Brand Strategy"
+  - "Content Creation"
+  - "Digital Marketing"
+  - "Product Marketing"
+  - "SEO/SEM"
+  - "Analytics"
+  - "Social Media"
+  - "Competitive Analysis"
+
+routing_keywords:
+  # Core Marketing Terms
+  - "marketing"
+  - "brand"
+  - "content"
+  - "campaign"
+  - "promotion"
+  - "advertising"
+  - "messaging"
+  - "copy"
+  - "copywriting"
+  
+  # Product Marketing Terms
+  - "product"
+  - "description"
+  - "product description"
+  - "positioning"
+  - "launch"
+  - "gtm"
+  - "go-to-market"
+  - "persona"
+  - "customer"
+  - "target audience"
+  - "value proposition"
+  - "features"
+  - "benefits"
+  
+  # Digital Marketing Terms
+  - "seo"
+  - "sem"
+  - "social"
+  - "social media"
+  - "analytics"
+  - "funnel"
+  - "landing"
+  - "landing page"
+  - "conversion"
+  - "website"
+  - "online"
+  - "digital"
+  
+  # Content Marketing Terms
+  - "blog"
+  - "article"
+  - "post"
+  - "content"
+  - "writing"
+  - "storytelling"
+  - "narrative"
+  - "video"
+  - "visual"
+  - "creative"
+  
+  # Analysis & Strategy
+  - "competitor"
+  - "competitive"
+  - "analysis"
+  - "research"
+  - "strategy"
+  - "plan"
+  - "market"
+  - "audience"
+  - "demographic"
+  - "segment"
+
+agents:
+  # Content & Brand Marketing
+  - name: "ContentAgent"
+    class: "ContentAgent"
+    file: "content_marketing/agents/content_agent.py"
+    specialization: "content_creation"
+    
+  - name: "BrandAgent"
+    class: "BrandAgent"
+    file: "content_marketing/agents/brand_agent.py"
+    specialization: "brand_strategy"
+    
+  - name: "SocialAgent"
+    class: "SocialAgent" 
+    file: "content_marketing/agents/social_agent.py"
+    specialization: "social_media"
+    
+  - name: "CommunityAgent"
+    class: "CommunityAgent"
+    file: "content_marketing/agents/community_agent.py"
+    specialization: "community_management"
+
+  # Digital Marketing
+  - name: "SEOAgent"
+    class: "SEOAgent"
+    file: "digital_marketing/agents/seo_agent.py"
+    specialization: "search_optimization"
+    
+  - name: "SEMAgent"
+    class: "SEMAgent"
+    file: "digital_marketing/agents/sem_agent.py"
+    specialization: "search_marketing"
+    
+  - name: "LandingAgent"
+    class: "LandingAgent"
+    file: "digital_marketing/agents/landing_agent.py"
+    specialization: "landing_pages"
+    
+  - name: "AnalyticsAgent"
+    class: "AnalyticsAgent"
+    file: "digital_marketing/agents/analytics_agent.py"
+    specialization: "marketing_analytics"
+    
+  - name: "FunnelAgent"
+    class: "FunnelAgent"
+    file: "digital_marketing/agents/funnel_agent.py"
+    specialization: "conversion_optimization"
+
+  # Product Marketing
+  - name: "PositioningAgent"
+    class: "PositioningAgent"
+    file: "product_marketing/agents/positioning_agent.py"
+    specialization: "product_positioning"
+    
+  - name: "PersonaAgent"
+    class: "PersonaAgent"
+    file: "product_marketing/agents/persona_agent.py"
+    specialization: "customer_research"
+    
+  - name: "GTMAgent"
+    class: "GTMAgent"
+    file: "product_marketing/agents/gtm_agent.py"
+    specialization: "go_to_market"
+    
+  - name: "CompetitorAgent"
+    class: "CompetitorAgent"
+    file: "product_marketing/agents/competitor_agent.py"
+    specialization: "competitive_intelligence"
+    
+  - name: "LaunchAgent"
+    class: "LaunchAgent"
+    file: "product_marketing/agents/launch_agent.py"
+    specialization: "product_launch" 

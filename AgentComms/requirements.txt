@@ -1,0 +1,21 @@
+# Agent Communication Infrastructure Dependencies
+# This is a modular component with its own dependencies
+# Main project dependencies are in the root requirements.txt
+
+# Core dependencies specific to AgentComms
+pydantic>=2.0.0
+redis>=5.0.0
+structlog>=23.0.0
+
+# Optional: Uncomment if using AgentComms standalone
+# python-dateutil>=2.8.0
+# httpx>=0.24.0
+# requests>=2.31.0
+# PyYAML>=6.0
+# python-dotenv>=1.0.0
+
+# Development and testing (for AgentComms module only)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.11.0
+pytest-cov>=4.1.0 
