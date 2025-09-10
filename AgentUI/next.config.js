@@ -39,3 +39,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig 
+// Webpack aliases fix for Azure Static Web Apps path mapping
